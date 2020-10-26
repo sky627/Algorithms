@@ -1,0 +1,33 @@
+sort name		nano time (size 100000, range 100000)
+bubbleSort:		465394810
+quickSort:		8374058
+insertionSort:	160328268
+shellSort:		18567773
+selectionSort:	146616494
+heapSort:		8568730
+mergeSort:		8558176
+countingSort:	6171611
+radixSort:		8976427
+systemSort:		7633859
+
+sort name		nano time (size 100000, range 100)
+bubbleSort:		650777414
+quickSort:		9684572
+insertionSort:	172221526
+shellSort:		8275400
+selectionSort:	197587089
+heapSort:		9846434
+mergeSort:		11727708
+countingSort:	3941448
+radixSort:		9165243
+systemSort:		7266470
+
+system sort -> Arrays.sort() -> quick sort using double pivots
+
+Bubble sort is the slowest.
+Insertion sort and selection sort are the second slowest.
+Shell sort and heap sort are slower than quick sort, but their excution time is not stable.
+Merge sort is usually slower than quick sort.
+Counting sort works very well in rather small range, even could fast than system sort.
+
+Conclusion: if you don't know the range, you'd better use system sort. Otherwise, you can try counting sort.
